@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "userName": "Santhosh",
+      "userEmail": "mangeogod0987@gmail.com",
+      "userPassword": "password123",
+      "isAdmin": true,
+      "id": 1
+    },
+    {
+      "userName": "Dhanush",
+      "userEmail": "dhanush@gmail.com",
+      "userPassword": "password123",
+      "isAdmin": true,
+      "id": 2
+    },
+    {
+      "userName": "TKR",
+      "userEmail": "tkr@gmail.com",
+      "userPassword": "password123",
+      "isAdmin": false,
+      "id": 3
+    }
+  ],
+  "books": [
+    {
+      "bookName": "Batman"
+    }
+  ]
+}
