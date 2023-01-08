@@ -1,7 +1,19 @@
+import { useEffect, useState } from "react";
+import BookList from "./BookList";
+
 const Home = () => {
+        const[books,setBooks]=useState(null);
+        useEffect(()=>{
+            fetch('http://localhost:8000/books').then((res)=>{
+                return res.json();
+            }).then((data)=>{
+                setBooks(data);
+                console.log(books);
+            }).catch((err)=>{console.log(err)})
+        },[]);
     return ( 
         <div className="home">
-            <p>iamhome</p>
+           {books&&<BookList books={books}/>}
         </div> 
     );
 }
